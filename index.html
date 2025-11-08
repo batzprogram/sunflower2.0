@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Emmm anu</title>
+  <style>
+    body{
+      margin:0;
+      padding:0;
+      font-family: Arial, sans-serif;
+      background:#0d0d0d; 
+      color:#e6e6e6; 
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      min-height:100vh;
+    }
+
+    .card{
+      background:#1a1a1a; 
+      border:1px solid #333;
+      border-radius:12px;
+      padding:24px;
+      width:min(420px, 90%);
+      box-shadow:0 4px 14px #00000080;
+    }
+
+    h1{
+      margin:0 0 8px;
+      color:#ffcc00; 
+      font-size:28px;
+      font-weight:700;
+    }
+
+    p{
+      line-height:1.5;
+      margin:0 0 16px;
+      color:#d1d1d1;
+    }
+
+    .btn{
+      display:inline-block;
+      background:#ffcc00;
+      color:#111;
+      padding:12px 16px;
+      border-radius:8px;
+      font-weight:700;
+      text-decoration:none;
+      transition:background .2s;
+    }
+    .btn:hover{
+      background:#e6b800;
+    }
+
+    .footer{
+      margin-top:20px;
+      font-size:12px;
+      color:#777;
+      text-align:center;
+    }
+    
+  .spotlight{
+    position: fixed;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 420px;
+    height: 420px;
+    background: radial-gradient(circle, rgba(255,204,0,0.32) 0%, rgba(255,204,0,0) 70%);
+    animation: pulse 4s ease-in-out infinite;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  @keyframes pulse{
+    0% { transform: translateX(-50%) scale(1); opacity: 0.35; }
+    50% { transform: translateX(-50%) scale(1.25); opacity: 0.65; }
+    100% { transform: translateX(-50%) scale(1); opacity: 0.35; }
+  }
+</style>
+</head>
+<body>
+  <div class="spotlight"></div>
+  <div class="card">
+    <h1>Hey..</h1>
+    <p>Sorry if i ruined your day yesterday. Here is a flower, hope can bright your day. 
+        Im upset but i was wrong, im not supposed to ignore your messages. Maaf yaa kalo bikin kamu merasa diabaikan</p>
+
+    <a class="btn" href="https://wa.me/6283833394640?text=[isi sendiri]" target="_blank">iya, dimaafin</a>
+    <a class="btn" href="https://wa.me/6283833394640?text=" target="_blank">gak mau</a>
+
+    <div class="footer"></div>
+  </div>
+</body>
+</html>
